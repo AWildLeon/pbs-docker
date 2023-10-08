@@ -6,7 +6,7 @@ I need to run PBS on my synology without bottleneck of NFS mount, etc.
 
 This Dockerfile build a Proxmox Backup Server image.
 
-It is used on my production environnement.
+It is used on my production environment.
 
 ## Defaults volumes
 
