@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image for PBS
-      run: docker build . --file Dockerfile --tag pbs:$(date +%s) --tag pbs:${GITHUB_REF##*/}
+      run: docker build . --file Dockerfile --tag pbs:$(date +%s) --tag pbs:${GITHUB_REF##*/} --tag pbs:latest
     - name: Build the Docker image for PBS Client
-      run: docker build . --file Dockerfile.client --tag pbs-client:$(date +%s) --tag pbs-client:${GITHUB_REF##*/}
+      run: docker build . --file Dockerfile.client --tag pbs-client:$(date +%s) --tag pbs-client:${GITHUB_REF##*/} --tag pbs-client:latest
